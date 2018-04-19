@@ -21,8 +21,8 @@ namespace WindowsFormsApplication1
         {
             string m1 = cmbM.SelectedItem.ToString();
             int m = Convert.ToInt32(m1);
-            x = 160 * (Math.Sin(3*t));
-            y = 110 * (Math.Cos(m*t));
+            x = 100 * (Math.Cos(4*t));
+            y = 76 * (Math.Sin(m*t));
         }
         private void button3_Click(object sender, EventArgs e)
         {
