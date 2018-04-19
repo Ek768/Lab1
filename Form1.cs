@@ -21,8 +21,8 @@ namespace WindowsFormsApplication1
         {
             string m1 = cmbM.SelectedItem.ToString();
             int m = Convert.ToInt32(m1);
-            x = 160 * (Math.Sin(3*t));
-            y = 110 * (Math.Cos(m*t));
+            x = 100 * (Math.Cos(4*t));
+            y = 76 * (Math.Sin(m*t));
         }
         private void button3_Click(object sender, EventArgs e)
         {
@@ -68,8 +68,8 @@ namespace WindowsFormsApplication1
                 ymax = (y1 > ymax) ? y1 : ymax;
             }
             // Подпись осей координат
-            g.DrawString((xmax).ToString(), new System.Drawing.Font("Arial", 8), new SolidBrush(Color.Black), (float)xmax, 0);
-            g.DrawString((ymax).ToString(), new System.Drawing.Font("Arial", 8), new SolidBrush(Color.Black), 0, (float)-ymax);
+            g.DrawString((xmax).ToString(), new System.Drawing.Font("Calibri", 10), new SolidBrush(Color.Red), (float)xmax, 0);
+            g.DrawString((ymax).ToString(), new System.Drawing.Font("Calibri", 10), new SolidBrush(Color.Red), 0, (float)-ymax);
         }
         //Изменение цвета фона
         private void button1_Click(object sender, EventArgs e)
@@ -79,14 +79,7 @@ namespace WindowsFormsApplication1
             if (dlg.ShowDialog() == DialogResult.OK)
                 button1.BackColor = dlg.Color;
         }
-        //Изменение цвета графика
-        private void button2_Click(object sender, EventArgs e)
-        {
-            ColorDialog dlgGraph = new ColorDialog();
-            dlgGraph.Color = button2.BackColor;
-            if (dlgGraph.ShowDialog() == DialogResult.OK)
-                button2.BackColor = dlgGraph.Color;
-        }     
+        
         //Выход
         private void button4_Click(object sender, EventArgs e)
         {
