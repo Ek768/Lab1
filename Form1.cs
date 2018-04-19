@@ -80,10 +80,6 @@ namespace WindowsFormsApplication1
                 button1.BackColor = dlg.Color;
         }
         
-        //Выход
-        private void button4_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+       
     }
 }
