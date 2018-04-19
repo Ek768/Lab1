@@ -79,14 +79,7 @@ namespace WindowsFormsApplication1
             if (dlg.ShowDialog() == DialogResult.OK)
                 button1.BackColor = dlg.Color;
         }
-        //Изменение цвета графика
-        private void button2_Click(object sender, EventArgs e)
-        {
-            ColorDialog dlgGraph = new ColorDialog();
-            dlgGraph.Color = button2.BackColor;
-            if (dlgGraph.ShowDialog() == DialogResult.OK)
-                button2.BackColor = dlgGraph.Color;
-        }     
+        
         //Выход
         private void button4_Click(object sender, EventArgs e)
         {
