@@ -68,8 +68,8 @@ namespace WindowsFormsApplication1
                 ymax = (y1 > ymax) ? y1 : ymax;
             }
             // Подпись осей координат
-            g.DrawString((xmax).ToString(), new System.Drawing.Font("Arial", 8), new SolidBrush(Color.Black), (float)xmax, 0);
-            g.DrawString((ymax).ToString(), new System.Drawing.Font("Arial", 8), new SolidBrush(Color.Black), 0, (float)-ymax);
+            g.DrawString((xmax).ToString(), new System.Drawing.Font("Calibri", 10), new SolidBrush(Color.Red), (float)xmax, 0);
+            g.DrawString((ymax).ToString(), new System.Drawing.Font("Calibri", 10), new SolidBrush(Color.Red), 0, (float)-ymax);
         }
         //Изменение цвета фона
         private void button1_Click(object sender, EventArgs e)
@@ -78,12 +78,6 @@ namespace WindowsFormsApplication1
             dlg.Color = button1.BackColor;
             if (dlg.ShowDialog() == DialogResult.OK)
                 button1.BackColor = dlg.Color;
-        }
-        
-        //Выход
-        private void button4_Click(object sender, EventArgs e)
-        {
-            Close();
         }
     }
 }
